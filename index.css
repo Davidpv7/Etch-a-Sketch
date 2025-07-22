@@ -1,0 +1,27 @@
+
+body {
+    background-color: rgb(111, 133, 155);
+}
+
+.container {
+    border: black solid 1px;
+    width: 400px;
+    height: 400px;
+}
+
+.div {
+    display: flex;
+    height: 6%;
+}
+
+.square {
+    border: white solid 1px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    height: 400;
+}
+
+.container > .square {
+    flex: 1;
+}
