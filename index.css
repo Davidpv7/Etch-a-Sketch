@@ -34,9 +34,6 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-.hovered {
-    background-color: black;
-}
 
 #resizeBtn {
     display: flex;

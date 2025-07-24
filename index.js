@@ -14,7 +14,11 @@ function createDivs(num){
             newDiv.appendChild(square);
             square.className = "square";
             square.addEventListener("mouseover", () => {
-                square.classList.add('hovered');
+                let greenColor = Math.floor(Math.random() * 256);
+                let redColor = Math.floor(Math.random() * 256);
+                let blueColor = Math.floor(Math.random() * 256);
+                let color = `rgb(${redColor}, ${greenColor}, ${blueColor})`;
+                square.style.background = color;
             })
         }
     }
@@ -30,6 +34,8 @@ resizeBtn.addEventListener("click", () => {
     containerMain.innerHTML = '';
     createDivs(newSize)
 });
+
+
 
 
 createDivs(numOfDivs);
