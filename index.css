@@ -1,18 +1,25 @@
 * {
     box-sizing: border-box;
 }
+
+#mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
 body {
-    background-color: rgb(111, 133, 155);
+    background-color: rgba(27, 236, 118, 0.153);
 }
 
 .container {
     border: black solid 3px;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 400px;
-    margin-top: 100px;
-    margin-left: 300px;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
 }
 
 .div {
@@ -21,8 +28,21 @@ body {
 }
 
 .square {
-    border: white solid 1px;
+    border: black solid 1px;
     display: flex;
     flex: 1;
     aspect-ratio: 1 / 1;
+}
+
+.hovered {
+    background-color: black;
+}
+
+#resizeBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px ;
+    margin-bottom: 20px;
 }
